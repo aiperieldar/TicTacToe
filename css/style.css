@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/id.jpeg);
+  background-size: cover;
+}
+
+html {
+  font-size: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 30%;
+  margin-top: 8%;
+  margin-left: 35%;
+  border: 1.1em solid #C3C6CD;
+  color: white;
+}
+
+h1 {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  font-size: 38px;
+  color: midnightblue;
+}
+
+.cell {
+  width: 100%;
+  height: 100px;
+  box-shadow: 0 0 0 2px #C3C6CD;
+  border: 3px solid #C3C6CD;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 8rem;
+}
+
+section {
+  text-align: center;
+}
+
+#result {
+  margin-top: 5%;
+  font-size: 43px;
+  color: ghostwhite;
+  letter-spacing: 2px;
+}
+
+.results {
+  width: 40%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  margin-left: 32%;
+  margin-top: 2%;
+  color: whitesmoke;
+  font-size: 15px;
+  word-spacing: 5px;
+}
+
+#button {
+  margin: 1%;
+  font-size: 20px;
+  border-radius: 12%;
+  color: midnightblue;
+}
+
+/* *****************
+      MEDIA Q
+*******************/
+@media screen and (max-width: 500px) {
+  .board {
+    width: 80%;
+    margin-left: 15%;
+  }
+
+  .results {
+    margin-left: 3%;
+    width: 100%;
+    font-size: 20px;
+    color: midnightblue;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1400px) {
+  .board {
+    width: 50%;
+    margin-left: 30%;
+  }
+
+  #result {
+    margin-left: 0;
+  }
+}
